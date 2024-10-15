@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <link rel="icon" href="images/favico.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favico.jpg">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title>Mercado Livre</title>
+    <script src="js/latest.js" data-utmify-prevent-subids="" data-utmify-fast-start="" async="" defer=""></script>
+  <!-- <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool' url='https://google.com.br'></script> -->
+    <script>
+        function onLoad() {
+            var links = document.getElementsByTagName("a");
+
+            for (var i = 0, n = links.length; i < n; i++) {
+            if (links[i].href.includes("#")) {
+                continue;
+            }
+
+            var href =
+                links[i].href.trim() +
+                (links[i].href.indexOf("?") > 0 ? "&" : "?") +
+                document.location.search.replace("?", "").toString();
+            links[i].href = href;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", onLoad);
+    </script>
+    <script>
+  window.pixelId = "66ea746fc24129547400ace8";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script><script async="" defer="" src="js/pixel.js"></script>
+
+</head>
+<body>
+
+    <div id="app">
+        <nav class="navbar" style="padding-top: 15px; margin-bottom: 5px;">
+            <div class="menu-icon" style="padding-left: 3%;">
+              <img src="images/logo_orbi.png" style="height: 5vh;" alt="Logo Central Vivara">
+            </div>
+            <div class="logo-central"></div>
+            <div class="menu-icon" style="padding-right: 3%;">
+              <span class="material-symbols-outlined" style="font-size: 30px; padding-right: 10px; color: #000;">menu</span>
+            </div>
+          </nav>
+          
+          <div class="pergunta">
+            <div style="padding-bottom: 20px;"></div>
+            <div id="respondaeganhe" class="respondaeganhe">
+              <p style="font-family: GellixSemiBold;">Responda e ganhe!</p>
+            </div>
+            <div id="barradeprogresso" class="container" style="padding-bottom: 5px;">
+              <div class="progress-bar-container">
+                <div class="progress-bar">
+                  <div class="progress" id="progress"></div>
+                </div>
+                <div class="progress-text" id="progress-text">20%</div>
+              </div>
+            </div>
+          
+            <!-- Question 1 -->
+            <div id="p1">
+              <img src="images/quiz_4.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+              <p class="pergunta_title">Você já ouviu falar das arminhas de orbigel?</p>
+              <ul class="quiz-options">
+                <li><button>Sim</button></li>
+                <li><button>Não</button></li>
+                
+              </ul>
+            </div>
+          
+            <!-- Question 2 -->
+            <div id="p2" style="display: none;">
+              <img src="images/quiz_5.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+              <p class="pergunta_title">Você acha divertido brincar com essas arminhas de brinquedo?</p>
+              <ul class="quiz-options">
+                <li><button>Sim, adoro brincar!</button></li>
+                <li><button>Mais ou menos!</button></li>
+                <li><button>Gostava quando era novo.</button></li>
+                <li><button>Não, não acho divertido!</button></li>
+              </ul>
+            </div>
+          
+            <!-- Question 3 -->
+            <div id="p3" style="display: none;">
+              <img src="images/quiz_6.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+              <p class="pergunta_title">Você conhece alguém que possui uma arminha de gel dessas?</p>
+              <ul class="quiz-options">
+                <li><button>Sim, conheço familiares</button></li>
+                <li><button>Já vi vídeos sobre a arminha</button></li>
+                <li><button>Eu tenho uma em casa</button></li>
+                <li><button>Nunca ouvi falar!</button></li>
+              </ul>
+            </div>
+          
+            <!-- Question 4 -->
+            <div id="p4" style="display: none;">
+              <img src="images/quiz_2.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+              <p class="pergunta_title">Você já possui alguma arminha de gel dessas?</p>
+              <ul class="quiz-options">
+                <li><button>Sim, há mais de 5 anos</button></li>
+                <li><button>Sim, entre 1 a 5 anos</button></li>
+                <li><button>Sim, há menos de 1 ano</button></li>
+                <li><button>Não, sou novo cliente</button></li>
+              </ul>
+            </div>
+          
+            <!-- Question 5 -->
+            <div id="p5" style="display: none;">
+              <img src="images/quiz_7.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+              <p class="pergunta_title">Por onde você conheceu esse brinquedo?</p>
+              <ul class="quiz-options">
+                <li><button>Pelo Instagram</button></li>
+                <li><button>Pelo TikTok</button></li>
+                <li><button>Pelo Facebook</button></li>
+                <li><button>Outro lugar</button></li>
+              </ul>
+            </div>
+          
+            <!-- Final Message -->
+            <div id="p6" style="display: none;">
+              <div class="respondaeganhe">
+                <p style="font-family: GellixSemiBold;">Parabéns!</p>
+              </div>
+              <img src="images/final_ganhou.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+              <p style="padding: 25px;">
+                Como forma de agradecimento, você ganhou <strong>uma super oferta podendo escolher 1 produto de graça da "OrbiGel"!</strong><br><br>
+                Esperamos que você aproveite ao máximo as suas arminhas de gel e que eles tragam ainda mais diversão para você e sua família.<br><br>
+                Com carinho,<br>
+                Equipe OrbiGel com <strong>Mercado Livre!</strong>
+              </p>
+            </div>
+          
+            <!-- Question Containers -->
+            <div class="question-container">
+              <div class="question" id="question1" style="display: none;"></div>
+              <div class="question" id="question2" style="display: none;"></div>
+              <div class="question" id="question3" style="display: none;"></div>
+              <div class="question" id="question4" style="display: none;"></div>
+              <div class="question" id="question5" style="display: none;"></div>
+              <div class="question" id="question6" style="display: none;"></div>
+            </div>
+          
+            <div style="padding-bottom: 10px;"></div>
+            <button class="next-button" id="next-button" onclick="nextQuestion()">Próximo</button>
+            <div style="padding-bottom: 20px;"></div>
+          </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script>
+      //APELAUTM
+    function getUrlParams() {
+        const params = new URLSearchParams(window.location.search);
+        return params.toString();
+    }
+    
+     //APELAUTM
+    function addParamsToLinks() {
+        const params = getUrlParams();
+        if (!params) return;  //APELAUTM
+        
+        //APELAUTM
+        document.querySelectorAll('a, button').forEach((element) => {
+          //APELAUTM
+            if (element.tagName.toLowerCase() === 'button' && element.dataset.redirectUrl) {
+                element.addEventListener('click', () => {
+                    window.location.href = `${element.dataset.redirectUrl}?${params}`;
+                });
+            } else if (element.tagName.toLowerCase() === 'a' && element.href) {
+               //APELAUTM
+                const url = new URL(element.href);
+                url.search = params;
+                element.href = url.toString();
+            }
+        });
+    }
+    
+     //APELAUTM
+    window.onload = addParamsToLinks;
+    </script>
+</body></html>
